@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <h1>Регистрация</h1>
+    <p>Пожалуйста, заполните эту форму</p>
+      <main>
+        <form id="registration-form">
+        <fieldset>
+            <label>Ваше имя: <input type="text" id="firstname" name="first-name" required /></label>
+            <label>Ваша фамилия: <input type="text" id="lastname" name="last-name" required /></label>
+            <label>Ваш Email: <input type="email" id="email" name="email" required /></label>
+            <label>Придумайте пароль: <input type="password" id="password" name="password" pattern="[a-z0-9]{8,}" required /></label>
+        </fieldset>
+
+        <fieldset>
+            <label><input type="radio" name="account-type" class="inline"checked /> Личный аккаунт</label>
+            <label><input type="radio" name="account-type" class="inline" /> Бизнес-аккаунт</label>
+            <label>
+            <input type="checkbox" name="terms" class="inline" required /> Я принимаю <a href="">условия пользовательского соглашения</a>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <label>Загрузить фото: <input type="file" name="file" /></label>
+            <label>Ваш возраст (лет): <input type="number" name="age" min="13" max="120" />
+            </label>
+            <label>Как вы о нас узнали?
+            <select name="referrer">
+                <option value="">(Выберите)</option>
+                <option value="1">Из блога</option>
+                <option value="2">YouTube-канал</option>
+                <option value="3">Форум</option>
+                <option value="4">Другое</option>
+            </select>
+            </label>
+            <label>Расскажите о себе:
+            <textarea name="bio" rows="3" cols="30" placeholder="Я люблю шоколадные конфеты..."></textarea>
+            </label>
+        </fieldset>
+
+        <input type="submit" id="submit-button" value="Зарегистрироваться" />
+        </form>
+      </main>
+  </body>
+</html>
