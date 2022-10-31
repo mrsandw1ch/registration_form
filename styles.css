@@ -93,7 +93,7 @@ body {
     color: #dfdfe2;
   }
 
-  .thankyou {
+  #thankyou {
     font-size: large;
     font-weight: bold;
     font-style: italic;

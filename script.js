@@ -6,7 +6,7 @@ submitButton.addEventListener('click', (event) => {
         event.preventDefault();
         let div = document.createElement('div');
         div.innerHTML = (`
-        <p class='thankyou'>Благодарим вас, ${form.firstname.value} ${form.lastname.value}, за регистрацию!</p>
+        <p id='thankyou'>Благодарим вас, ${form.firstname.value} ${form.lastname.value}, за регистрацию!</p>
         <img id="lizard" src="lizard.jpg">
         `);
         form.append(div);
